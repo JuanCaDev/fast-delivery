@@ -3,13 +3,21 @@
 @tailwind utilities;
 
 .btn {
-  @apply px-4 py-2 rounded font-bold;
+  @apply px-4 py-2 rounded shadow-md;
 }
 
-.btn-blue {
+.btn-white {
+  @apply border border-gray-200 text-gray-700;
+}
+
+.btn-white:hover {
+  @apply bg-gray-100 shadow-md;
+}
+
+/* .btn-blue {
   @apply bg-blue-500 text-white;
 }
 
 .btn-blue:hover {
   @apply bg-blue-700;
-}
+} */

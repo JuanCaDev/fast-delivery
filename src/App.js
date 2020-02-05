@@ -6,6 +6,7 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+
 import Home from './views/Home';
 import Button from './components/Button';
 
@@ -13,7 +14,7 @@ function App() {
   return (
     <Router>
 
-      <div className="container mx-auto">
+      <div className="h-screen">
 
         <Switch>
           <Route path="/about">
@@ -27,21 +28,21 @@ function App() {
           </Router>
         </Switch>
 
-        <nav>
-          <ul className="flex justify-between mx-16 mt-5">
+        <nav style={{ height: '16vh' }}>
+          <ul className="flex justify-around items-center flex-wrap m-4 h-full sm:mx-16">
             <li> 
               <Button>
-                <Link to="/">Home</Link>
+                <Link to="/">Quiero comprar</Link>
               </Button>
             </li>
             <li>
               <Button>
-                <Link to="/about">About</Link>
+                <Link to="/about">Código Fast</Link>
               </Button>
             </li>
             <li>
               <Button>
-                <Link to="/users">Users</Link>
+                <Link to="/users">Casilleros</Link>
               </Button>
             </li>
           </ul>
