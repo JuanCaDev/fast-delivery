@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.title {
+  @apply text-gray-700 font-sans font-semibold text-center text-xl;
+}
+
+@screen sm {
+  .title {
+    @apply text-4xl;
+  }
+}
+
 .btn {
   @apply px-4 py-2 rounded shadow-md;
 }
@@ -13,11 +23,3 @@
 .btn-white:hover {
   @apply bg-gray-100 shadow-md;
 }
-
-/* .btn-blue {
-  @apply bg-blue-500 text-white;
-}
-
-.btn-blue:hover {
-  @apply bg-blue-700;
-} */
