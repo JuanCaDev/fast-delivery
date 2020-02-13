@@ -13,20 +13,18 @@ import Option from './views/Option';
 
 function Routes() {
   return (
-    <div>
-      <Switch>
-        {
-          options.map(option => {
-            return  <Route path={ option.path } key={ option.id }>
-                      <Option title={ option.subtitle } description={ option.description }/>
-                    </Route>
-          })
-        }
-        <Router path="/">
-          <Home/>
-        </Router>
-      </Switch>
-    </div>
+    <Switch>
+      {
+        options.map(option => {
+          return  <Route path={ option.path } key={ option.id }>
+                    <Option title={ option.subtitle } description={ option.description } videoUrl={ option.videoUrl }/>
+                  </Route>
+        })
+      }
+      <Router path="/">
+        <Home/>
+      </Router>
+    </Switch>
   )
 }
 

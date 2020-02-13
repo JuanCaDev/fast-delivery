@@ -5,23 +5,23 @@ import logo from "../assets/images/logo.png";
 
 function Home() {
   return(
-    <div className="md:flex" style={{ height: '80vh' }}>
-      <div className="md:w-1/2">
+    <div className="Home-container-screen h-auto">
+      <div className="w-full pr-0 lg:pr-32">
         <img
           src={ image }
           alt="Julian Peña"
         />
       </div>
 
-      <div className="md:w-1/2 flex flex-col justify-center mx-10 md:mx-48">
-        <figure>
+      <div className="w-full flex flex-col items-center px-4 my-auto sm:px-10 md:px-16 lg:px-40">
+        <figure className="w-full px-1">
           <img
             src={ logo }
             alt="Fast Delivery logo"
-            className="mx-auto"
+            className="w-48 md:w-full mx-auto"
           />
         </figure>
-        <h1 className="title">¿Quieres comprar en Estados Unidos?</h1>
+        <h1 className="title w-full px-1">¿Quieres comprar en Estados Unidos?</h1>
       </div>
     </div>
   )

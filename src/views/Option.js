@@ -1,26 +1,27 @@
 import React from 'react';
 
-import YouTube from 'react-youtube';
+// import { Player } from 'video-react';
+import ReactPlayer from 'react-player'
 
-function Option({ title, description }) {
+function Option({ title, description, videoUrl }) {
   const opts = {
-    height: '100%',
+    height: '220px',
     width: '100%'
   };
 
   return (
     <div className="md:flex relative">
       <div className="md:w-1/2 flex m-auto circle h-80vh">
-        <div className="mx-4 my-8 lg:mx-16 md:my-32 w-full">
-          <YouTube
-            videoId="Qs_OcQebuPI"
-            opts={opts}
-            containerClassName="w-full h-64 md:h-full"
+        <div className="lg:mx-16 md:mx-4 sm:my-4 md:my-auto w-full">
+          <ReactPlayer
+            url={ videoUrl }
+            width='100%'
+            className="ReactPlayer"
           />
         </div>
       </div>
 
-      <div className="md:w-1/2 flex flex-col justify-center px-8 lg:px-16">
+      <div className="md:w-1/2 flex flex-col justify-center px-4 lg:px-8">
         <h1 className="text-gray-700 font-sans font-semibold text-center text-4xl mb-5">{ title }</h1>
         <p>{ description }</p>
       </div>

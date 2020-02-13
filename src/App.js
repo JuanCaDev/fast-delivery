@@ -11,7 +11,7 @@ function App() {
 
   return (
     <Router>
-      <div className="h-screen">
+      <div className="h-screen container-screen">
         <Routes/>
         <Nav/>
       </div>

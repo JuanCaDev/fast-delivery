@@ -10,8 +10,8 @@ import options from '../data/options';
 
 function Nav() {
   return (
-    <nav style={{ height: '16vh' }}>
-      <ul className="flex justify-around items-center flex-wrap m-4 h-full sm:mx-16">
+    <nav className="bg-white">
+      <ul className="flex justify-around items-center flex-wrap p-4 h-full sm:mx-16">
         <Button>
           <Link to="/">Inicio</Link>
         </Button>
