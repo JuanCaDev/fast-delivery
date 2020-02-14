@@ -10,7 +10,7 @@ import Nav from './components/Nav';
 function App() {
 
   return (
-    <Router>
+    <Router basename={ process.env.PUBLIC_URL }>
       <div className="h-screen container-screen">
         <Routes/>
         <Nav/>
