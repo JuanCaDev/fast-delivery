@@ -7,7 +7,7 @@ const options = [
     el que vende. Le enseñamos a comprar inteligente (lo que es y al precio que es) y si lo 
     suyo es el comercio le enseñamos a negociar, a buscar, a comprar al por mayor y al mejor precio.`,
     videoUrl: 'https://player.vimeo.com/video/391359249',
-    path:'/codigo-fast'netlify deploy — dir=./build
+    path:'/codigo-fast'
   },
   {
     id: 2,
