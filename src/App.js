@@ -8,12 +8,11 @@ import Routes from './routes';
 import Nav from './components/Nav';
 
 function App() {
-  // basename={ process.env.PUBLIC_URL }
   return (
     <Router>
-      <div className="h-screen container-screen">
-        <Routes/>
+      <div className="container-screen">
         <Nav/>
+        <Routes/>
       </div>
     </Router>
   );

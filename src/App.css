@@ -1,11 +1,18 @@
 .container-screen {
   display: grid;
-  grid-template-rows: 1fr 130px;
+  /* grid-template-rows: 1fr 130px; */
+  grid-auto-flow: dense;
 }
 
 .Home-container-screen {
+  height: calc(100vh - 80px);
   display: grid;
+  grid-template-rows: 1fr 1fr;
   margin: auto;
+}
+
+.Option-container {
+  height: calc(100vh - 80px);
 }
 
 .ReactPlayer {
@@ -24,25 +31,31 @@
   z-index: -1;
 }
 
+.max-h-0 {
+  max-height: 0;
+}
+
+.max-h-auto {
+  max-height: 724px;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: .8;
+}
+.whatsapp-icon:hover {
+  opacity: 1;
+}
+
 @media (min-width: 534px) { 
   .container-screen {
-    grid-template-rows: 1fr 140px;
+    /* grid-template-rows: 1fr 140px; */
   }
 }
 
 @media (min-width: 768px) { 
-  .container-screen {
-    grid-template-rows: 1fr 120px;
-  }
-
-  .h-80vh {
-    height: 80vh;
-  }
-
-  /* .btn {
-    width: 20rem;
-  } */
-
   .circle::before {
     width: 700px;
     height: 700px;
@@ -55,7 +68,9 @@
 
   .Home-container-screen {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
+
 }
 
 @import "~video-react/dist/video-react.css";

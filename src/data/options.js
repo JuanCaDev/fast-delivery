@@ -7,7 +7,7 @@ const options = [
     el que vende. Le enseñamos a comprar inteligente (lo que es y al precio que es) y si lo 
     suyo es el comercio le enseñamos a negociar, a buscar, a comprar al por mayor y al mejor precio.`,
     videoUrl: 'https://player.vimeo.com/video/391359249',
-    path:'/codigo-fast'
+    path:'/compras-o-vendes'
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const options = [
     lo real, lo del primer mundo, lo que está de moda, lo que no ha llegado al país todavía y 
     adicional a todo esto te tira la liga... todo eso en una sola empresa: Fast Delivery.`,
     videoUrl: 'https://vimeo.com/391359649',
-    path:'/quiero-comprar'
+    path:'/que-hacemos'
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const options = [
     Con los últimos 4 digitos de tu cédula puedes ganarte un porcentaje solo por recomendar la empresa.
     Cuando compren con tu código, vas a ganas comisiones.`,
     videoUrl: 'https://vimeo.com/391359719',
-    path:'/casilleros'
+    path:'/codigo-fast'
   }
 ]
 
