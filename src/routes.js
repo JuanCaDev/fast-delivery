@@ -41,7 +41,7 @@ function Routes() {
             Con los últimos 4 digitos de tu cédula puedes ganarte un porcentaje solo por recomendar la empresa.
             Cuando compren con tu código, vas a ganas comisiones.
           </p>
-          <a href="https://goo.gl/forms/32OK3olRonII5Ikk2" className="btn-outline btn-outline-red mt-5 mx-auto" target="_blank" rel="noopener noreferrer">
+          <a href="https://goo.gl/forms/32OK3olRonII5Ikk2" className="btn-outline btn-outline-red my-5 mx-auto" target="_blank" rel="noopener noreferrer">
             Obtener mi código Fast
           </a>
         </Option>

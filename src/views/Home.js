@@ -13,7 +13,7 @@ function Home() {
         />
       </div>
 
-      <div className="w-full flex flex-col items-center sm:my-auto">
+      <div className="w-full flex flex-col items-center my-5 sm:my-auto">
         <figure className="px-1 max-w-lg">
           <img
             src={ logo }
